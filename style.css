@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+  background-color: #000;
+  height: 100vh;
+  }
+  .logo img {
+      width: 200px; /* Ajuste para o tamanho desejado */
+      height: auto; /* Mantém a proporção da imagem */
+      cursor: pointer;
+      transition: 1.2s;
+    }
+  .interface {
+  max-width: 1280px;
+  margin: 0 auto;
+  }
+  
+  .flex{
+  display: flex;
+  }
+  
+  .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #d42dcc;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 2s;
+  }
+  
+  h2.titulo{
+    color: #ffffff;
+    font-size: 38px;
+    text-align: center;
+  
+  }
+  
+  h2.titulo span{
+    color: #d42dcc;
+  }
+  
+  button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #94208e;
+    transform: scale(1.05);
+  }
+  
+  /*Estilo do cabeçalho*/
+  header{
+    padding: 40px 4%;
+  }
+  
+  header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  p{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  h2, h3 {
+    margin-bottom: 20px; /* Espaçamento abaixo dos títulos */
+  }
+  
+  p {
+    margin-bottom: 30px; /* Espaçamento abaixo dos parágrafos */
+    line-height: 1.4; /* Melhor leitura */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  /* Ajuste específico para a seção dos gêneros */
+  .Profissão .Profissão-box {
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+  }
+  
+  .Profissão .Profissão-box h3 {
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
+  
+  .Profissão .Profissão-box p {
+    font-size: 18px;
+    max-width: 400px; /* Mantém os textos bem alinhados */
+    margin: 0 auto; /* Centraliza */
+  }
+  
+  
+  a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+  }
+  header a :hover{
+    color: #fff;
+    transform: scale(1.25);
+  }
+  
+  header nav ul{
+    list-style-type: none;
+  }
+  
+  header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+  }
+  
+  /*Estilo do Topo do site*/
+  section.topo-do-site{
+    padding: 40px 4%;  
+  }
+  .img-topo-site img {
+    width: 400px; /* Ajuste para o tamanho desejado */
+      height: auto; /* Mantém a proporção da imagem */
+      border-radius: 10%;
+  }
+  
+  section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+  }
+  
+  .topo-do-site h1{
+    color: #fff;
+    font-size: 30px;
+    line-height: 40px;  
+  }
+  
+  .topo-do-site h1 span{
+    color:#d42dcc;
+  }
+  
+  .topo-do-site .txt-topo-do-site h1 span{
+    color: #d42dcc;
+  }
+  
+  .topo-do-site p{
+    color: #fff;
+    margin: 40px;
+  }
+  
+  .topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    
+  }
+  
+  /*ESTILO DOS SOFTWARES*/
+  section.Profissão{
+    padding: 40px 4%;
+  
+  }
+  
+  .Profissão h2{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .Profissão h2 span{
+    color: #0ae4d2;
+  }
+  
+  section.Profissão .flex {
+    gap: 60px;
+  }
+  
+  .Profissão .Profissão-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+  }
+  
+  .Profissão .Profissão-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #fff;
+  }
+  
+  .Profissão .Profissão-box i{
+    color: #0ae4d2;
+    font-size: 50px;
+  }
+  
+  .Profissão .Profissão-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+  }
+  
+  /*ESTILO SOBRE*/
+section.sobre {
+  padding: 80px 4%;
+}
+
+.sobre .flex {
+  display: flex;
+  align-items: center; /* Alinha verticalmente os itens */
+  gap: 60px;
+}
+
+.img-sobre img {
+  width: 100%; /* Garante que a imagem se ajuste ao contêiner */
+  max-width: 300px; /* Define um tamanho máximo para a imagem */
+  height: auto;
+  border-radius: 20px;
+}
+
+.sobre .txt-sobre {
+  color: #fff;
+  flex: 1; /* Permite que o texto preencha o espaço restante */
+}
+
+.sobre .txt-sobre h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+  color: yellow;
+  display: block;
+}
+
+.sobre .txt-sobre p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+border: none;
+background-color: yellow;
+font-size: 20px;
+cursor: pointer;
+margin: 0 5px;
+transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Transições suaves */
+}
+
+.sobre .txt-sobre .btn-social button:hover {
+transform: scale(1.1); /* Pequeno aumento ao passar o mouse */
+box-shadow: 0 0 10px rgba(255, 255, 0, 0.8); /* Sombra suave */
+background-color: #ffdd00; /* Cor ligeiramente mais escura ao passar o mouse */
+}
+  
+  /* ESTILO DO PORTFÓLIO */
+  section.portifolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+  }
+  
+  /* Flexbox para alinhamento */
+  section.portifolio .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Espaçamento entre as caixas */
+    margin-top: 60px;
+  }
+  
+  /* Título */
+  .portifolio h2 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .portifolio h2 span {
+    color: #d42dcc;
+  }
+  
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .img-port {
+        width: 90%; /* Ocupa quase toda a largura da tela em dispositivos menores */
+        height: 400px;
+    }
+  }
+   /*Circulo YOUTUBERS*/
+.yt-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.youtubers-box {
+  position: relative;
+  width: 300px; /* Tamanho fixo para todas as imagens */
+  height: 300px;
+  border-radius: 150px;
+  overflow: hidden;
+}
+
+.youtubers-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta a imagem sem deformar */
+  border-radius: 20px;
+  transition: transform 0.5s;
+}
+
+.youtubers-box:hover img {
+  transform: scale(1.1);
+}
+
+.youtubers-box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.youtubers-box:hover .overlay {
+  opacity: 1;
+}
+ 
+  /* ESTILO DA SEÇÃO MEU PORTFÓLIO (VÍDEOS) */
+section.meu-portfolio {
+    padding: 80px 4%;
+  }
+  
+  .meu-portfolio .videos-portfolio {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+  
+  .meu-portfolio .video-box {
+    width: 560px; /* Largura padrão para vídeos do YouTube */
+    max-width: 100%; /* Para responsividade em telas menores */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .meu-portfolio .video-box iframe {
+    width: 100%;
+    height: 315px; /* Altura padrão para vídeos do YouTube */
+    border-radius: 8px;
+  }
+
+ /*ESTILO FORMULARIO PRA CONTATO (contact)*/
+section.contact{
+  padding: 80px 4%;
+}
+
+form{
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+form input, form textarea{
+  width: 100%;
+  background-color: #00000036;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 18px;
+}
+
+form textarea{
+  resize: none;
+  max-height: 200px;
+}
+
+form .btn-enviar{
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .btn-enviar input{
+  width: 120px;
+  background-color: #d42dcc;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s;
+}
+  
