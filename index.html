@@ -60,7 +60,9 @@
           <h2 class="titulo">SOFTWARES QUE <span>UTILIZO</span></h2>
           <div class="flex">
             <div class="Profissão-box">
-              <i class="bi bi-film"></i>
+              <div class="svg-format">
+
+              </div>
               <h3>After Effects</h3>
               <p>
                 O After Effects é essencial para edições que exigem efeitos
@@ -179,20 +181,18 @@
       <section class="contact">
         <div class="interface">
           <h2 class="titulo">FALE <span>COMIGO</span></h2>
-          <form action="" method="POST">
-            <input type="text" name="nome" placeholder="Seu nome completo:" required maxlength="45" />
+          <form action="https://formspree.io/f/mkgrbwvw" method="POST">
+            <input type="text" name="name" placeholder="Seu nome: João da Silva" required maxlength="45" />
 
-            <input type="email" name="email" placeholder="Seu e-mail:" required
+            <input type="email" name="email" placeholder="Seu e-mail: exemplo@exemplo.com" required
               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required maxlength="45" />
 
-            <input type="tel" name="telefone" placeholder="Seu telefone: +55 (11) 11111-1111" required
+            <input type="tel" name="phone" placeholder="Seu telefone: +55 (11) 11111-1111" required
               pattern="\([1-9]{2}\)[ ]?[9]{1}[0-9]{4}-[0-9]{4}" maxlength="19" />
 
-            <textarea name="mensagem" placeholder="Sua mensagem" required maxlength="500"></textarea>
-
-            <div class="btn-enviar">
-              <input type="submit" value="ENVIAR" />
-            </div>
+            <textarea name="message" placeholder="Sua mensagem: Olá, me interessei no seu trabalho." required
+              maxlength="500"></textarea>
+            <button class="btn-enviar">ENVIAR</button>
           </form>
         </div>
       </section>
