@@ -441,3 +441,8 @@ form .btn-enviar {
 .svg-format img {
 	width: 90px;
 }
+
+.center {
+	width: 100%;
+	text-align: center;
+}
