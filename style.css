@@ -437,3 +437,7 @@ form .btn-enviar {
 	border-radius: 30px;
 	font-size: 18px; /* Ajustando a fonte do botão */
 }
+
+.svg-format img {
+	width: 90px;
+}
